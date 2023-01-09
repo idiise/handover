@@ -1,0 +1,137 @@
+---
+title: "Handover"
+author: "Idrissa Dabo"
+date: "2023-01-08"
+output: 
+  html_document:
+   toc: true
+   toc_float: yes
+   theme: united
+---
+
+## Market Data Sur Databridge (Aliou/Ndeye Fatou)
+
+### Chad ( Contact Abel Bakoi)
+Au cas ou Abel ne parvient pas à charger les données sur Databridge veuillez suivre les instructions suivantes:
+
+Le reshaping du chad est disponible ci-dessous
+```{r echo=FALSE}
+xfun::embed_file("Chad_Price_Data_Reshaping_Last.xlsx")
+```
+
+
+
+1.	Ouvrez à la fois le fichier de date FEWSNET du Chad et le reshaping file ci-dessus
+
+2.	Dans le fichier de FEWSNET, copiez les données du mois qui vous intéresse (toute la ligne) 
+
+3.	Collez les données dans le fichier de mise en forme (Chad_price_Data_reshaping), dans la colonne D1, faites un collage spécial/Transposition
+4.	Dans la cellule I1, fixez la date du mois au 15 du mois, et  au format jj/mm/aaaa.
+5.	Copiez les données de D4:I452 et collez les valeurs dans la feuille « Paste here » à partir de la ligne 2
+6.	Assurez-vous que le format de la date est jj/mm/aaaa. N'utilisez pas de formule dans ce nouveau fichier car le Data Bridge du PAM ne lit pas les formules
+7.	Triez vos données et supprimez les lignes où les données de prix sont vides et non pertinentes.
+8.	Enregistrez sous forme de fichier Excel, par exemple Tchad_price_data_MoisAnnée. Vos données sont prêtes à être téléchargées
+9.	Allez sur le Data Bridge et charger les données en choisissant le bon mapping schéma.
+
+### Gambia (Contact Saikou Jawo)
+La syntaxe ou do file Stata permettant de créer un fichier de formatage ou reshaping est ci-dessous
+```{r echo=FALSE}
+xfun::embed_file("DataReshapeGambia.do")
+
+```
+
+fichier de référence ci-dessous
+
+```{r echo=FALSE}
+xfun::embed_file("october2022.xlsx")
+```
+
+
+1. créer un dossier Gambia, puis copier **les données de la Gambia** ainsi que la **syntaxe ou dofile** ci-dessus
+
+2. Dans le dossier Gambia créer un nouveau dossier **Reports** comme dans l'image **ci-dessous**
+
+3. ouvrir le fichier de la gambie, effacer le contenu des 2 premières lignes en les supprimant 
+
+4. Insérer deux nouvelles lignes de sorte à avoir des cellules non vides à partir de la ligne 4
+
+5. supprimer toutes les colonnes contenant **GEOMEAN Price**
+
+6. Copier la première ligne du fichier october2022 puis coller à la première ligne du fichier de la Gambie
+
+7. ouvrir le do file, mettre le nom du fichier puis exécuter
+
+8. Dans le dossier **Reports** ouvrir le fichier dont le nom commence par Report_ puis changer la date en mettant le 15 du mois en cours
+
+9. Charger le fichier databridge
+
+![](C:\\Users\\USER MSI\\Documents\\R Project\\handover/gambia.png)
+
+### Sierra Leone (Contact BallahMusa Kande )
+
+1. A partir de la ligne 9 copier le contenu du fichier excel provenant du CO de la Sierra Leone
+
+2. Coller en valeur dans un fichier excel vide
+
+3. supprimer les lignes vides
+
+4. Supprimer  les colonnes **Price** et **Weight**
+
+5. Renommer la colonne Price/Kg en **Price** puis ajouter **Price Type** comme nom de colonne  de la colonne après *Year*
+
+6. Insérer une colonne Date entre les colonnes **Year** et **Price Type** puis saisir le 15 du mois en cours dans le fichier exemple **15/01/2023**
+
+7. dans la colonne Commodity changer **Gari** en **Cassava meal (gari)** et **Okra** en **Okra (fresh)**
+
+8. Sauvegarder le fichier puis uploader dans databridge
+
+### Mauritanie (Contact Saidou Nourou Barry ou Cheikh mbodj)
+
+1. ouvrir le lien de l'application développée par **RBD RAM**   <https://idiise.shinyapps.io/format_mauritania/>
+
+2. Uploader le fichier de la Mauritanie dans l'application du RBD RAM puis exporter le fichier excel
+
+3. ouvrir le fichier excel exporté puis supprimer la première ligne
+
+4. sauvegarder le fichier puis uploader le dans databridge
+
+### Mali 
+
+Le responsable marché n'est plus au PAM veuillez coordonner avec Bakary Sissouma pour savoir qui est chargé d'uploder leur données
+
+### Autres Pays
+Pour tous les autres pays il faudra régulièrement entrer dans databridge, vérifier la cohérence des données, la date puis approuver
+
+## MFI (Aliou/Ndeye fatou/Marie)
+
+Intégrer vos Inputs dans le rapport MFI du Bénin (Ongoing) et de la Gambie (ongoing). Les différents outils et détails pour l'appui technique sont standardisés et disponibles ici 
+
+<https://www.wfp.org/publications/market-functionality-index-mfi>
+
+## Market price dashboard (Ndeye Fatou)
+ 
+Si les licences Tableau deviennent disponibles avant la fin de mes congés les dashboard marchés pourront être mis à jour par Ndeye Fatou
+ 
+## CH excel data on HDX (Federico)
+
+Pour toutes les questions concernant les données CH sur HDX Federico pourrait aider.
+Les différentes matrices intermédiaires du dernier CH sont disponibles ici en cas de besoin
+
+<https://wfp-my.sharepoint.com/:f:/g/personal/idrissa_dabo_wfp_org/Esg1xQ7YVAZEo3njxrESOO8B4scbSXM5OhaVGcYf0OLLxQ?e=iDcwOZ>
+
+## Datalib (Aliou/Boubacar)
+Appuyer les pays à uploader leur données et syntaxes dans datalib
+
+## Market Bulletin (Aliou/Ndeye fatou)
+
+## Codebook governance (Aliou/boubacar/Federico)
+prochaine réunion du Codebook Governance le 12/01/2023 il serait intéressant qu'on y assiste pour avoir une idéee sur les changements et amélioration concernant le survey designer, les indicateurs et les différents outils du PAM
+
+## [IT Solution Registry] shinyapps.io (Aliou)
+ 
+ Aliou merci de suivre l'état d'avancement quand IT enverra un mail
+
+## Appui technique Tableau, Moda, Syntaxe(Anyone)
+
+les CO me sollicitent souvent s'ils ont des soucis avec tableau, syntaxe SPSS, Syntaxe R, questionnaires Xlsform, Moda etc... Toute personne de la team qui pourrait aider n'hésite pas.
+
