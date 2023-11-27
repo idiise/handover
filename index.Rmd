@@ -65,7 +65,7 @@ xfun::embed_file("october2022.xlsx")
 
 9. Charger le fichier databridge
 
-![](C:\\Users\\USER MSI\\Documents\\R Project\\handover/gambia.png)
+![](C:/Users/USER MSI/Documents/R Project/handover/gambia.PNG)
 
 ### Sierra Leone (Contact BallahMusa Kande )
 
