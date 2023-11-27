@@ -1,7 +1,7 @@
 ---
 title: "Handover"
 author: "Idrissa Dabo"
-date: "2023-01-08"
+date: "2023-27-11"
 output: 
   html_document:
    toc: true
@@ -9,7 +9,7 @@ output:
    theme: united
 ---
 
-## Market Data Sur Databridge (Aliou/Ndeye Fatou)
+## Market Data Sur Databridge
 
 ### Chad ( Contact Abel Bakoi)
 Au cas ou Abel ne parvient pas à charger les données sur Databridge veuillez suivre les instructions suivantes:
@@ -95,43 +95,108 @@ xfun::embed_file("october2022.xlsx")
 
 4. sauvegarder le fichier puis uploader le dans databridge
 
-### Mali 
-
-Le responsable marché n'est plus au PAM veuillez coordonner avec Bakary Sissouma pour savoir qui est chargé d'uploder leur données
 
 ### Autres Pays
 Pour tous les autres pays il faudra régulièrement entrer dans databridge, vérifier la cohérence des données, la date puis approuver
 
-## MFI (Aliou/Ndeye fatou/Marie)
 
-Intégrer vos Inputs dans le rapport MFI du Bénin (Ongoing) et de la Gambie (ongoing). Les différents outils et détails pour l'appui technique sont standardisés et disponibles ici 
+## Collaboration with partners CILLS/ECOWAS/IFPRI
 
-<https://www.wfp.org/publications/market-functionality-index-mfi>
+### Cadre Harmonisé with CILLS
+Le Cadre Harmonisé est un outil fédérateur qui permet de faire une analyse pertinente consensuelle, rigoureuse et transparente de la situation alimentaire et nutritionnelle courante et projetée. Il permet de classifier la sévérité de l’insécurité alimentaire et nutritionnelle suivant l’échelle internationale de classification à travers une approche référant à des fonctions et des protocoles bien définis. Les résultats du CH sont communiqués de manière claire, cohérente et effective en vue d’appuyer la prise de décision en liant l’information à l’action.
 
-## Market price dashboard (Ndeye Fatou)
- 
-Si les licences Tableau deviennent disponibles avant la fin de mes congés les dashboard marchés pourront être mis à jour par Ndeye Fatou
- 
-## CH excel data on HDX (Federico)
+Le PAM fournit un soutien technique en automatisant les tableurs d'analyse du CH, les tableurs de compilation des résultats pour les coachs et les facilitateurs, ainsi que la codification des facteurs contributifs. Il existe une version pour les pays francophones et une version pour les pays anglophones pour chacun de ces éléments. Il est nécessaire de mettre à jour la période d'analyse lors de chaque session.Pour ce faire, il suffit d'afficher les lignes 40-41 pour la version française et 41-42 pour la version anglaise, de modifier la période d'analyse, puis de les masquer. La personne en charge peut solliciter l'aide d'Aliou, Federico, Marie ou tout autre personne dans l'unité qui est à l'aise avec Excel au besoin. Les diférents tableurs les plus à jour avec lesquels il faudra continuer sont disponibles ci-dessous :
+```{r echo=FALSE}
+xfun::embed_file("tableurs ch.rar")
+```
+Après l'analyse du CH, une consolidation régionale du comité technique est effectuée, suivie du PREGEC. Lors du PREGEC, il est essentiel de suivre les présentations à distance et de coordonner avec Abdoulaye Ndiaye, Samaké, Federico et Marie pour les dernières mises à jour des résultats des pays. Ensuite, compilez les résultats de tous les pays et présentez les données comme dans le fichier Excel disponible sur HDX, en faisant correspondre les noms des différentes zones analysées ainsi que leur code géographique avec ceux du fichier HDX.
 
-Pour toutes les questions concernant les données CH sur HDX Federico pourrait aider.
-Les différentes matrices intermédiaires du dernier CH sont disponibles ici en cas de besoin
+<https://data.humdata.org/dataset/cadre-harmonise>
 
-<https://wfp-my.sharepoint.com/:f:/g/personal/idrissa_dabo_wfp_org/Esg1xQ7YVAZEo3njxrESOO8B4scbSXM5OhaVGcYf0OLLxQ?e=iDcwOZ>
+Pour comprendre le fichier, sollicitez l'aide de Federico, Abdoulaye, et Samaké. 
+Utilisez la syntaxe ci-après pour mettre à jour le Dashboard Admin2:
 
-## Datalib (Aliou/Boubacar)
-Appuyer les pays à uploader leur données et syntaxes dans datalib
+<https://github.com/idiise/CHIPCdataWestAfrica> .
 
-## Market Bulletin (Aliou/Ndeye fatou)
+### ECOWAS: ECOWAP and M&E Web platform's Ecosystem
 
-## Codebook governance (Aliou/boubacar/Federico)
-prochaine réunion du Codebook Governance le 12/01/2023 il serait intéressant qu'on y assiste pour avoir une idéee sur les changements et amélioration concernant le survey designer, les indicateurs et les différents outils du PAM
+L'Unité de Suivi et Évaluation au niveau régional est située à la Direction de l'Agriculture et du Développement Rural (DARD) relevant du Département des Affaires Économiques et Agricoles. Cette unité, opérationnelle depuis 2015, a la responsabilité spécifique du suivi et de l'évaluation de toutes les initiatives dans le cadre d'ECOWAP/CAADP, la Politique Agricole Régionale de la CEDEAO. Elle synthétise, analyse, stocke, gère et rapporte les résultats globaux au Comité Consultatif pour l'Agriculture et l'Alimentation (ACAF), composé de partenaires et de parties prenantes.
 
-## [IT Solution Registry] shinyapps.io (Aliou)
- 
- Aliou merci de suivre l'état d'avancement quand IT enverra un mail
+La CEDEAO (DARD) possède plusieurs systèmes internes (Système de S&E d'ECOWAP, MESECOPS, ECOAGRIS, entre autres), tous autonomes et non interopérables, ce qui complique la génération, la collecte, la communication et l'analyse des données. Bien que des efforts aient été déployés pour regrouper ces systèmes et plateformes dans le cadre d'ECOWAP, cela reste un défi. Le système de S&E d'ECOWAP est largement utilisé par le personnel de la DARD, mais l'administrateur rencontre des difficultés à rassembler efficacement des informations de toutes les plateformes et systèmes dans des délais impartis et à des fins variées.
 
-## Appui technique Tableau, Moda, Syntaxe(Anyone)
+La CEDEAO a organisé une réunion physique avec RBD RAM pour que le PAM explique le fonctionnement de Databridge, Datalib et Dataviz et les aide à mettre en place des plateformes similaires. Il est donc nécessaire d'aider les développeurs de la CEDEAO à créer un dépôt Github commun où ils peuvent partager leur code et le valider ensemble. Pour les assister efficacement, une révision des langages de programmation **Python** et **SQL**. sera également nécessaire. 
 
-les CO me sollicitent souvent s'ils ont des soucis avec tableau, syntaxe SPSS, Syntaxe R, questionnaires Xlsform, Moda etc... Toute personne de la team qui pourrait aider n'hésite pas.
+### IFPRI Compilation des données PDM
+
+A travers les données PDM compilées IFPRI cherche à comprendre comment les ménages modifient leurs comportements ou mettent en oeuvre des stratégiges pour faire face aux chocs. En effet le type de choc, sa durée, sa fréquence et sa gravité peuvent tous influencer la manière dont les ménages réagissent.Ainsi l'objectif sera également d'utiliser des modèles probit pour examiner comment plusieurs chocs influent sur la probabilité de choisir une stratégie d'adaptation donnée.
+Il faudra appuyer IFPRI à chaque fois qu'ils auront besoin d'une donnée spécifique.
+une syntaxe de compilation des données des années précédentes la standardisations des noms de variables est disponible ci-dessous: 
+
+<https://github.com/idiise/Lessonlearnt2022>
+
+## MFI et Market analysis
+
+### MFI 
+
+Les divisons Research Assessment and Monitoring (RAM) et Supply Chain ont conçu ensemble une méthodologie standard pour évaluer la fonctionnalité des marchés à travers le MFI.  Le MFI permet de déterminer la modalité de transfert la plus appropriée pour une intervention, d’identifier les menaces possibles pour les opérations du PAM ainsi que les mesures d’atténuation ou les activités de développement du marché nécessaires pour y faire face. Le MFI évalue les marchés à travers 9 dimensions (Assortiment, Disponbilité, Prix, Résilience, Compétition, Infrastruture, Service, Qualité des aliments  et Accès et protection) qui sont consolidées dans un indice composite qui fournit un score qui permet d’établir une comparaison entre les marchés, entre les pays et dans le temps. Une enquête MFI peut être réalisé en face à face (MFI Full) ou par téléphone (MFI Réduit) et les différents outils sont automatisés de sorte qu’il puisse être mis en œuvre par un staff non technique et qui n’est pas forcément un spécialiste marché.
+Pour plus de détails veuillez consulter le package disponible à ce lien 
+
+<https://www.wfp.org/publications/market-functionality-index-mfi> 
+
+et suivre le cours sur le MFI sur welearn. Il sera nécessaires d'assister les bureaux pays dans la formation des formateurs, de réviser les TDRs,de veiller à ce qu'ils utilisent le questionnaire standardisés et dans certaines situations de les aider à uploader leurs données dans Databridge.
+Après cela, des contributions seront également nécessaires pour les rapports MFI.
+
+De temps en temps il daudra mettre à jour la situation des enquêtes MFI et MEB via le lien ci-dessous 
+
+<https://wfp.sharepoint.com/sites/VAM-RBD/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FVAM%2DRBD%2FShared%20Documents%2FCWG%20%2D%20CBT&p=true&ct=1691667692039&or=Teams%2DHL&ga=1&LOF=1>
+
+**Actuellement la Guinnée Conakry a terminé sa collecte de donnée et le Burkina a envoyé son rapport pour des commentaires de la parts de RBD**
+
+### Market Analysis
+Les prix sont un indicateur global fournissant des informations clés pour de nombreuses activités du PAM. En tant que résultat des forces de l'offre et de la demande, ils peuvent donner un aperçu opportun de divers facteurs qui influent sur le fonctionnement d'un marché et qui sont pertinents pour la programmation d'aide alimentaire.
+
+Dans les pays où le PAM opère, ces facteurs incluent le contexte macro-économique, les catastrophes naturelles ou d'origine humaine, l'infrastructure physique et les conditions météorologiques associées à la production agricole, ainsi que la volatilité des prix internationaux des produits de base et leur transmission aux prix intérieurs. Dans ce contexte, le PAM analyse souvent les marchés en examinant trois aspects : 
+
+la *structure*, tels que les acteurs et les institutions pour l'offre et la demande, les obstacles à l'entrée en tant que joueur du marché, les tendances de la production et les zones de chalandise du marché ; 
+
+la *conduite*, telle que les niveaux de concurrence, les règles et les normes ainsi que les exécutions de contrats ; 
+
+et la *performance*, telle que différentes méthodes d'analyse des prix telles que la saisonnalité et la volatilité, l'intégration du marché, les marges bénéficiaires et la génération de revenus, et les modèles de pouvoir d'achat. On appelle cela le paradigme *SCP*.
+
+L'ensemble de ces informations sous la forme de suivi des prix a des utilisations pratiques pour le PAM, notamment les points suivants :
+
+1. Surveillance de la sécurité alimentaire pour générer des indicateurs du coût de la vie et soutien à l'alerte précoce grâce aux alertes sur les prix ;
+
+2. Fourniture d'informations pour les transferts monétaires (CBT), y compris la valeur du panier alimentaire standard pour les bons d'achat ou les modèles attendus de dépenses des ménages pour les transferts en espèces, ainsi que des informations pour ajuster les valeurs des transferts ;
+
+3. Contrats avec les détaillants et information sur la stratégie de vente au détail du PAM ;
+
+4. Surveillance des tendances inflationnistes et comparaison des prix avec les magasins qui ne sont pas directement impliqués dans la programmation du PAM ;
+
+5. Prise de décision sur le moment et le lieu des achats du PAM (par exemple, achats locaux/régionaux) ;
+
+6. Aide aux agriculteurs (de petite échelle) pour la planification agricole et les décisions en matière de commercialisation, y compris les primes d'assurance et les paiements ;
+
+7. Évaluation de l'impact des politiques, programmes et projets, et modélisation des résultats en matière de sécurité alimentaire en utilisant les prix comme facteurs de choc ;
+
+8. Augmentation de l'information et de la transparence pour les producteurs, les commerçants et les consommateurs afin d'améliorer l'efficacité du marché.
+
+**Dans cette section, la contribution consistera à rédiger les bulletins de marchés et à fournir à Aliou toutes les informations pertinentes nécessaires à ses présentations dans le cadre du FSNWG en cas de besoin**.
+
+Les différents classeurs pour mettre à jour les dashboards Marchés des différents pays de la région sont également disponibles via le lien :
+
+<https://wfp-my.sharepoint.com/:f:/g/personal/idrissa_dabo_wfp_org/EgNH5L4hbwdNqIJunQp3rZEBfjG2J7-ebKxpNn-dmq8iCA?e=kXWpYc>
+
+## Plateforme et Information Management Ecosystem.
+Nous disposons de différentes plates-formes au PAM. Certaines sont utilisées pour la visualisation des données et sont accessibles à toutes les personnes, internes ou externes au PAM. Il s'agit notamment du Dataviz. D'autres ne sont accessibles qu'aux points focaux désignés pour charger les données, à savoir Databridge et Datalib.
+
+Au cours des deux dernières années, des améliorations significatives ont été apportées, conduisant à la création du Survey Designer qui facilite la création d'un questionnaire ODK XLSForm, généralement utilisé puis téléchargé sur notre plateforme de collecte de données appelée Moda. Certains pays utilisent également CSPRO et Kobo pour leur collecte.
+
+L'objectif du Survey Designer est d'encourager les pays à utiliser les mêmes noms de variables standard pour faciliter la mise en place de syntaxes standard, gagnant ainsi du temps dans le nettoyage des données et le calcul des indicateurs. Outre ces plates-formes, différents groupes d'utilisateurs de données partagent leurs expériences et les défis rencontrés dans leur région, collaborant pour mettre en place des méthodes de calcul plus simples.
+
+Un comité technique appelé **Codebook Governance and Management** organise des réunions mensuelles regroupant quelques membres de chaque bureau régional pour partager des expériences et des commentaires afin d'améliorer le Survey Designer et les différentes plates-formes.
+
+À travers les discussions de ce comité technique, le PAM explore la possibilité d'élargir davantage l'utilisation de Shiny, qui facilite les choses un peu plus que le logiciel Tableau. Il est donc nécessaire de participer aux réunions du comité technique Codebook Governance, d'assister rapidement les bureaux pays dans le téléchargement des données sur les différentes plates-formes, de réviser leurs questionnaires, de les soutenir dans le nettoyage de leurs bases de données et de parcourir régulièrement le Github du PAM pour être au courant des dernières mises à jours dans le calcul des indicateurs.
+
+<https://github.com/orgs/WFP-VAM/repositories>
 
